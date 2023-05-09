@@ -1,0 +1,74 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'SerreriaSobriaMedium', sans-serif;
+    box-sizing: border-box;
+    background: url(images/will-rust-LfIjZn996d0-unsplash.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#sign-up-form {
+    background-color: rgba(131,90,72, 0.6);
+    padding: 80px;
+    width: 40vw;
+    border-radius: 20px;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+label {
+    font-size: .7rem;
+}
+input {
+    border-radius: 4px;
+    font-family: 'ArchitectsDaughterRegular';
+}
+
+.input-container {
+
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.group-field {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 20px;
+}
+
+#submit-button {
+    margin-top: 2rem;
+    font-family: inherit;
+}
+
+.log-in {
+    margin-top: 1rem;
+    font-size: .7rem;
+}
+
+@media only screen and (max-width: 850px) {
+    .group-field {
+        display: flex;
+        flex-direction: column;
+    }
+}
