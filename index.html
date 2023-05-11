@@ -9,6 +9,7 @@
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/la-chata" type="text/css"/>
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/architecture-font" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script src="js-file.js" defer></script>
 </head>
 <body>
     <div id="image-container">
@@ -28,27 +29,27 @@
                 <h3>Red pandas are adorable!</h3>
                 <div class="group-field name-field">
                     <div class="input-field">
-                        <input type="text" name="first-name" id="first-name" required>
+                        <input class="input" type="text" name="first-name" id="first-name" required />
                         <label for="first-name">First Name <span aria-label="required">*</span></span></label>
                     </div>
                     <div class="input-field">
-                        <input type="text" name="last-name" id="last-name" />
+                        <input class="input" type="text" name="last-name" id="last-name" />
                         <label for="last-name">Last Name</label>
                     </div>
                 </div>
                 <div class="group-field contact-field">
                     <div class="input-field">       
-                        <input type="email" name="mail" id="mail" required />
+                        <input class="input" type="email" name="mail" id="mail" required />
                         <label for="mail">Email <span aria-label="required">*</span></label>
                     </div>
                     <div class="input-field">                        
-                        <input type="tel" name="phone-number" id="phone-number" />
+                        <input class="input" type="tel" name="phone-number" id="phone-number" />
                         <label for="phone-number">Phone Number</label>
                     </div>
                 </div>
                 <div class="group-field password-field">
                     <div class="input-field">                       
-                        <input type="password" name="password" id="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" />
+                        <input class="input" type="password" name="password" id="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" />
                         <label for="password">Password <span aria-label="required">*</span></label>
                         <div class="tooltip-container">
                             <i class="fa-solid fa-circle-info"></i>
@@ -61,9 +62,9 @@
                         </div>
                     </div>
                     <div class="input-field">     
-                        <input type="password" name="confirm-password" id="confirm-password" required />
+                        <input class="input" type="password" name="confirm-password" id="confirm-password" required />
                         <label for="confirm-password">Confirm Password <span aria-label="required">*</span></label>
-                       
+                        <div class="confirm-message"></div>
                     </div>
                 </div>
                 <button id="submit-button" type="submit">Create Account</button>

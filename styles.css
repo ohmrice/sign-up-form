@@ -12,6 +12,7 @@ html, body {
     --main-background-color: rgb(31, 34, 37);
     --input-background-color: rgb(238, 234, 216);
     --warning-color: rgb(230, 33, 79);
+    --warning-background-color: rgb(245, 130, 157);
     --hover-color: rgb(76, 94, 52);
 }
 
@@ -174,6 +175,13 @@ h3 {
     }
 }
 
+.input-field > .confirm-message {
+    order: 3;
+    position: absolute;
+    top: 3.5rem;
+    left: 0.5rem;
+}
+
 .input-field > .tooltip-container {
     position: absolute;
     order: 3;
@@ -228,9 +236,10 @@ input[type="password"] {
     background-color: var(--hover-color);
 }
 
-.log-in-prompt {
+.log-in-prompt, .confirm-message {
     font-size: 0.7rem;
 }
+
 .log-in-prompt > a {
     color: var(--second-color);
     text-decoration: none;
@@ -241,7 +250,10 @@ input[type="password"] {
     color: var(--hover-color);
 }
 
+
+
 .invalid-input:invalid {
-    border: 3px solid rgb(207, 51, 24);
+    border: 2px solid var(--warning-color);
+    background-color: var(--warning-background-color);
 }
 
