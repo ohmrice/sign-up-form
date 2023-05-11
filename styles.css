@@ -172,8 +172,19 @@ h3 {
         +label {
             color: var(--second-color);
         }
-    }
+    }    
 }
+
+.error {
+    animation: shake ease-in-out 0.1s;
+}
+
+@keyframes shake {
+    0%      { transform: translateX(5px); }
+    25%     { transform: translateX(0); }
+    75%     { transform: translateX(-5px); }
+    100%    { transform: translateX(0); }
+  }
 
 .input-field > .confirm-message {
     order: 3;

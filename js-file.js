@@ -3,17 +3,28 @@ const confirmMsg  = document.querySelector(".confirm-message");
 const submitBtn = document.querySelector("#submit-button");
 
 submitBtn.addEventListener("click", (event) => {
-    if (passwordsMatch) {
-
-        return true;
-    } else {
-        console.log("No");
+    for (let i = 0; i < inputs.length; i++) {
+        if (inputs[i].hasAttribute('required')) {
+            inputs[i].classList.add("invalid-input");
+            if (!inputs[i].checkValidity()){
+                inputs[i].classList.add("error");
+            }           
+        }    
+    }
+    if (!passwordsMatch) {
+        let confirm = document.querySelector("#confirm-password");
+        confirm.classList.add("error");
         event.preventDefault();
+
     }
 });
 
+
+
 inputs.forEach((textField) => textField.addEventListener("focus", () => {
-    textField.classList.add("invalid-input");
+    if (textField.hasAttribute('required')) {
+        textField.classList.add("invalid-input");
+    }    
     if (textField.name === "confirm-password" || textField.name === "password") {
         let password1 = document.querySelector("#password");
         let password2 = document.querySelector("#confirm-password");
