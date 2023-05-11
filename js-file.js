@@ -19,8 +19,6 @@ submitBtn.addEventListener("click", (event) => {
     }
 });
 
-
-
 inputs.forEach((textField) => textField.addEventListener("focus", () => {
     if (textField.hasAttribute('required')) {
         textField.classList.add("invalid-input");
@@ -37,7 +35,6 @@ let passwordsMatch = false;
 function confirmPassword (pw1, pw2) {   
         if (pw1.value === pw2.value) {
             passwordsMatch = true;
-            console.log(passwordsMatch);
             pw2.style.backgroundColor = "rgb(238, 234, 216)";
             pw2.style.borderColor = "rgb(238, 234, 216)";
             confirmMsg.textContent = "Passwords match";
@@ -49,5 +46,4 @@ function confirmPassword (pw1, pw2) {
         pw2.style.backgroundColor = "rgb(245, 130, 157)";
         pw2.style.borderColor = "rgb(230, 33, 79)";
         passwordsMatch = false;
-        console.log(passwordsMatch);
 }
