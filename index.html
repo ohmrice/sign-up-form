@@ -50,10 +50,20 @@
                     <div class="input-field">                       
                         <input type="password" name="password" id="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" />
                         <label for="password">Password <span aria-label="required">*</span></label>
+                        <div class="tooltip-container">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <div class="tooltip-content">
+                                <ul>
+                                    <li>Minimum 8 characters</li>
+                                    <li>Must include at least one uppercase letter, one lowercase letter, and one number</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="input-field">     
                         <input type="password" name="confirm-password" id="confirm-password" required />
                         <label for="confirm-password">Confirm Password <span aria-label="required">*</span></label>
+                       
                     </div>
                 </div>
                 <button id="submit-button" type="submit">Create Account</button>
