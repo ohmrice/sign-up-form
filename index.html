@@ -6,62 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles.css"/>
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/serreria-sobria" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/la-chata" type="text/css"/>
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/architecture-font" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 <body>
-    
+    <div id="image-container">
+        <img id="image" src="images/will-rust-LfIjZn996d0-unsplash.jpg" alt="Red Panda" />
+        <div id="logo-text">
+            <p>ΩRICE</p>
+        </div>
+        <p id="photo-credit">Photo by <a href="https://unsplash.com/ko/@willrust?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Will Rust</a> on <a href="https://unsplash.com/photos/LfIjZn996d0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+    </div>   
     <div id="sign-up-form">
         <div class="header">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your depeest dreams. Sign up <em>now</em> to get started.</p>
-            <p>You <em>know</em> you want to.</p>
+            <h1>This is not a real online service! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida malesuada porta. Duis dapibus risus a velit auctor, sed euismod. Sign up <em>now</em> to get started.</h1>
+            <h2>You <em>know</em> you want to.</h2>
         </div>
-        <h3>Let's do this!</h3>
-        <form>
-            <div class="input-container">
-
-                <div class="group-field">
+        <div class="input-container"></div>
+            <form>  
+                <h3>Red pandas are adorable!</h3>
+                <div class="group-field name-field">
                     <div class="input-field">
-                        <label for="first-name">First Name</label>
-                        <input type="text" name="first-name" id="first-name">
+                        <input type="text" name="first-name" id="first-name" required>
+                        <label for="first-name">First Name <span aria-label="required">*</span></span></label>
                     </div>
                     <div class="input-field">
+                        <input type="text" name="last-name" id="last-name" />
                         <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name" id="last-name">
                     </div>
                 </div>
-                <div class="group-field">
-                    <div class="input-field">
-                        <label for="mail">Email</label>
-                        <input type="email" name="mail" id="mail">
+                <div class="group-field contact-field">
+                    <div class="input-field">       
+                        <input type="email" name="mail" id="mail" required />
+                        <label for="mail">Email <span aria-label="required">*</span></label>
                     </div>
-                    <div class="input-field">
+                    <div class="input-field">                        
+                        <input type="tel" name="phone-number" id="phone-number" />
                         <label for="phone-number">Phone Number</label>
-                        <input type="tel" name="phone-number" id="phone-number">
                     </div>
                 </div>
-                <div class="group-field">
-                    <div class="input-field">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
+                <div class="group-field password-field">
+                    <div class="input-field">                       
+                        <input type="password" name="password" id="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" />
+                        <label for="password">Password <span aria-label="required">*</span></label>
                     </div>
-                    <div class="input-field">
-                        <label for="confirm-password">Confirm Password</label>
-                        <input type="password" name="confirm-password" id="confirm-password">
+                    <div class="input-field">     
+                        <input type="password" name="confirm-password" id="confirm-password" required />
+                        <label for="confirm-password">Confirm Password <span aria-label="required">*</span></label>
                     </div>
-        
                 </div>
+                <button id="submit-button" type="submit">Create Account</button>
+            </form>
+            <div class="log-in">
+                <p class="log-in-prompt">Already have an account? <a href="#" id="login-redirect">Log in</a></p>
             </div>
-            <button id="submit-button" type="submit">Create Account</button>
-        </form>
-        <div class="log-in">
-        <p class="log-in-prompt">Already have an account? <a href="#" id="login-redirect">Log in</a></p>
-        </div>
-    </div>
-    <footer>
-        <p>Built by: <a id="account-link" href="https://github.com/ohmrice" target="_blank"> ΩRICE <i class="fa-brands fa-github"></i></a></p>
-        <p>Photo by <a href="https://unsplash.com/ko/@willrust?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Will Rust</a> on <a href="https://unsplash.com/photos/LfIjZn996d0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
-    </footer>
+        </div>     
+    </div>        
 </body>
 </html>
