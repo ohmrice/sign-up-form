@@ -16,7 +16,6 @@ const checkValues = (() => {
             let confirm = document.querySelector("#confirm-password");
             confirm.classList.add("error");
             event.preventDefault();
-
         }
     });
 
